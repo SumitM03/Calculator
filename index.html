@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="calculator-display">
+                <div class="calculator-operation" id="operation-display"></div>
+                <div class="calculator-input" id="input-display">0</div>
+            </div>
+        </div>
+        <div class="keypad">
+            <button class="key key-function" onclick="handleKeypad('AC')">AC</button>
+            <button class="key key-function" onclick="handleKeypad('+/-')">+/-</button>
+            <button class="key key-function" onclick="handleKeypad('%')">%</button>
+            <button class="key key-operator" onclick="handleKeypad('÷')">÷</button>
+            
+            <button class="key" onclick="handleKeypad('7')">7</button>
+            <button class="key" onclick="handleKeypad('8')">8</button>
+            <button class="key" onclick="handleKeypad('9')">9</button>
+            <button class="key key-operator" onclick="handleKeypad('×')">×</button>
+            
+            <button class="key" onclick="handleKeypad('4')">4</button>
+            <button class="key" onclick="handleKeypad('5')">5</button>
+            <button class="key" onclick="handleKeypad('6')">6</button>
+            <button class="key key-operator" onclick="handleKeypad('-')">-</button>
+            
+            <button class="key" onclick="handleKeypad('1')">1</button>
+            <button class="key" onclick="handleKeypad('2')">2</button>
+            <button class="key" onclick="handleKeypad('3')">3</button>
+            <button class="key key-operator" onclick="handleKeypad('+')">+</button>
+            
+            <button class="key key-zero" onclick="handleKeypad('0')">0</button>
+            <button class="key" onclick="handleKeypad('.')">.</button>
+            <button class="key key-operator" onclick="handleKeypad('=')">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
